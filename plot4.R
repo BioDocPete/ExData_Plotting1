@@ -39,12 +39,12 @@ plot(twodays$DateTime, twodays$Global_active_power, "l", xlab="", ylab="Global A
 plot(twodays$DateTime, twodays$Sub_metering_1, "l", xlab="", ylab="Energy sub metering")
 lines(twodays$DateTime, twodays$Sub_metering_2, col="red")
 lines(twodays$DateTime, twodays$Sub_metering_3, col="blue")
-legend("topright", # places a legend at the appropriate place 
+legend("top", # places a legend at the appropriate place 
        c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), # puts text in the legend 
        lty=c(1,1,1), # gives the legend appropriate symbols (lines)
        lwd=c(2.5,2.5,2.5), col=c("black", "red","blue"), # gives the legend lines the correct color and width
        bty = "n", # removees the border from the legend
-       cex=0.25) # changes the character size
+       cex=1) # changes the character size
 # 3rd plot
 plot(twodays$DateTime, twodays$Voltage, "l", xlab="datetime", ylab="Voltage")
 # 4th plot
