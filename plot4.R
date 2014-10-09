@@ -44,7 +44,7 @@ legend("topright", # places a legend at the appropriate place
        lty=c(1,1,1), # gives the legend appropriate symbols (lines)
        lwd=c(2.5,2.5,2.5), col=c("black", "red","blue"), # gives the legend lines the correct color and width
        bty = "n", # removees the border from the legend
-       cex=0.5) # changes the character size
+       cex=0.25) # changes the character size
 # 3rd plot
 plot(twodays$DateTime, twodays$Voltage, "l", xlab="datetime", ylab="Voltage")
 # 4th plot
